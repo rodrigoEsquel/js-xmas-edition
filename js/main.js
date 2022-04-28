@@ -60,8 +60,10 @@ function manejarErrores(errores) {
         numeroErrores = numeroErrores + errores[data].length;
     })
     if (numeroErrores === 0) {
+
         document.formulario.className = "oculto";
         document.querySelector("#exito").className = "";
+        
         setTimeout(function(){
             window.location.href = "./wishlist.html";
         }, 5000);
